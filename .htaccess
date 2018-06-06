@@ -1,0 +1,14 @@
+# public_html/.htaccess
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+	RewriteBase /app/
+
+    #Redirect All Requests To The Subfolder
+    RewriteRule ^ /public
+
+</IfModule>
